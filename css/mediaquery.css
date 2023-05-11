@@ -1,0 +1,112 @@
+@media screen and (max-width: 768px) {
+    /* ================================================ 
+       ================ section one ===================
+       ================================================*/
+    .section-one .dark-bg .nav-bar{
+        position: fixed;
+        background-color: #303030;
+        z-index: 9999;
+    }
+    .section-one .nav-bar .nav-links .link{
+        display: none;
+    }
+    .section-one .nav-bar .nav-links .nav-icon{
+        display: inline-block;
+    }
+    /* 
+    ==============================================
+    ================ section two =================
+    ==============================================*/
+    .section-two .container{
+        width: 80%;
+    }
+    .section-two .image-container .image-frame{
+        border: none;
+        padding: 0 20px;
+        width: 100%;
+    }
+    .section-two .image-container .image-frame .image{
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+    }
+    .text-container .down .info p.float-left,
+    .section-two .container .image-container,
+    .section-two .container .image-container .image-frame .image img,
+    .section-two .container .text-container
+    {
+        width: 100%;
+        float: none;
+    }
+    .section-two .text-container{
+        margin-top: 32px;
+    }
+    /* ==============================================
+       ================ section three ===============
+       ==============================================*/
+    .section-three .container .details .card{
+        width: 80%;
+        margin: auto;
+        float: none;
+    }
+    /* ==============================================
+       ================ section four  ===============
+       ==============================================*/
+    .section-four .container .gallery .item{
+        width: 80%;
+        margin: auto;
+        float: none;
+    }
+    /* 
+    ==============================================
+    ================ section five  ===============
+    ==============================================*/
+    .section-five .container .card{
+        width: 100%;
+        padding: 40px 16px;
+        float: none;
+    }
+    /*
+    ==============================================
+    ================ section six  ================
+    ==============================================*/
+    .section-six .container .card{
+        width: 100%;
+    }
+    .section-six .container .card .parent{
+        height: 400px;
+    }
+    .section-six .container .card .parent .content{
+        padding: 24px 48px;
+    }
+    .section-six .container .card .parent .content img{
+        width: 20%;
+    }
+    .section-six .container .card .parent .content .text{
+        float: none;
+    }
+    
+    /* 
+    ==============================================
+    ================ section seven  ==============
+    ==============================================*/
+    .section-seven .container .body .card{
+        width: 80%;
+        margin: 30px auto;
+        float: none;
+    }
+    /* 
+    ==============================================
+    ================ section eight  ==============
+    ==============================================*/
+    .section-eight .container .form form{
+        width: 90%;
+    }
+    .section-eight .container .form form input{
+        width: 100%;
+        float: none;
+    }
+    .section-eight .container .form form button{
+        padding: 12px 20px;
+    }
+}

@@ -1,0 +1,567 @@
+/* general styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.main-color{
+    color: #ff305b;
+}
+/* ==============================================
+   ================ section one =================
+   ==============================================*/
+.section-one{
+    height: 100vh;
+    background-image: url(../images/slider/slider-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bg-dark{
+    height: 100vh;
+    background-color: rgba(0,0,0,.8);
+}
+.nav-bar {  
+    position: fixed;
+    z-index: 9;
+    padding: 16px 10%;
+    width: 100%;
+}
+.nav-bar .nav-logo{
+    width: fit-content;
+}
+.nav-bar .nav-links{
+    width: fit-content;
+}
+.nav-bar .nav-links .link{
+    display: inline-block;
+    padding: 0 16px;
+}
+.nav-bar .nav-links .nav-icon a img{
+    width: 30px;
+}
+.nav-bar .nav-links .nav-icon{
+    display: none;
+}
+.nav-bar a{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.nav-bar .nav-logo a.logo{
+    font-size: 24px;
+    color: #ff305b;
+    font-weight: bold;
+} 
+.nav-bar .nav-links .link a:hover{
+    color: #ff305b;
+}
+.content{
+    height: 100%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 70px;
+    padding: 20px 0;
+    color: #ff305b;
+}
+.section-one .content p{
+    font-family: 'source Sans Pro', sans-serif;
+    font-size: 24px;    
+}
+.section-one .content p.top{
+    font-weight: bold;
+}
+.bottom{
+    font-size: 26px;
+    font-weight: 300;
+}
+/* ==============================================
+   ================ section two =================
+   ==============================================*/
+.section-two{
+    padding-top: 100px;
+}
+.section-two .image-container{
+    width: 50%;
+}
+.section-two .image-container .image-frame{
+    width: 70%;
+    margin:0 20px 0 auto ;
+    border: 8px solid #777;
+    border-radius: 5px;
+}
+.section-two .container .image-container .image-frame .image{
+    position: relative;
+    top: 20px;
+    left: 20px;   
+    overflow: hidden;
+}
+.section-two .image-container .image-frame img{
+    width: 100%; 
+}
+.section-two .container .image-container .image-frame .image .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(60, 60, 60, .6);
+    transform: translateY(100%);
+    transition: all .5s;
+}
+.section-two .container .image-container .image-frame .image:hover .layer{
+    transform: translateY(0);
+}
+.layer ul{
+    width: 50%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: 50%;
+}    
+.layer ul li{
+    float: left;
+    width: 25%;
+}
+.section-two .image-container .image-frame .image .layer .icon{
+    width: 30px;
+}
+.text-container{
+    width: 50%;
+    padding: 0 20px;
+}
+.text-container .up{
+    border-bottom: .5px dashed #999; 
+    padding-bottom: 20px;
+}
+.text-container .up h2{
+    color: #333;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 34px;
+    line-height: 26px;
+    padding-left: 8px;
+    border-left: 5px solid #ff305b;
+}
+.text-container .up p,
+.text-container .down .info p.float-left{
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #555;
+}
+.text-container .down{
+    padding: 20px 0;
+}
+.text-container .down .info p.float-left{
+    width: 50%;
+    margin-top: 0;
+    padding: 10px 0;
+}
+.text-container .down .info p.float-left span{
+    font-weight: bold;
+}
+.text-container .down button{
+    padding: 12px 24px;
+    margin: 50px 8px 0 0;
+    background-color: #ff305b;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+.text-container .down button img{
+    width: 24px;
+    vertical-align: middle;
+}
+.text-container .down button:hover{
+    background-color: #ec2403;
+}
+/* ==============================================
+   ================ section three ===============
+   ==============================================*/
+.section-three{
+    background-color: #f1f1f1;
+    padding: 100px 0;
+    margin-top: 100px;
+}
+.section-three .container{
+    width: 90%;
+    margin: auto;
+}
+.container .head{
+    text-align: center;
+}
+.container .head h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+    padding-bottom: 16px;
+    color: #333;
+}
+.container .head .line{
+    margin: 3px auto;
+    border-top: 1px solid #ff305b;
+}
+.container .head .up-line{
+    width: 8%;
+}
+.container .head .mid-line{
+    width: 16%;
+}
+.container .head .down-line{
+    width: 8%;
+}
+.section-three .container .details{
+    margin: 32px 0;
+}
+.section-three .container .details .card{
+    width: 25%;
+    padding: 32px 16px;
+    text-align: center;
+}
+.section-three .container .details .card img{
+    width: 50px;
+}
+.section-three .container .details .card h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    margin: 16px 0;
+    color: #333;
+}
+.section-three .container .details .card p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: #555;
+}
+.section-three .container .details .card:hover{
+    background-color: #fff;
+}
+/*
+==============================================
+================ section four ================
+==============================================
+*/
+.section-four{
+    margin-top: 100px;
+}
+.section-four .container .sec-nav{
+    margin: 32px 0;
+    text-align: center;
+}
+.section-four .container .sec-nav button{
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+.section-four .container .sec-nav button.first{
+    color: #ff305b;
+}
+.section-four .container .gallery .item{
+    width: 33.3%;
+    padding: 0 16px 32px 16px;
+    float: left;
+    text-align: center;
+}
+.section-four .container .gallery .item .parent-layer{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.section-four .container .gallery .item .parent-layer img{
+    width: 100%;
+}
+.section-four .container .gallery .item .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(51, 51, 51, .7);
+    opacity: 0;
+    transition: opacity .5s;
+}
+.section-four .container .gallery .item .layer .layer-child img{
+    width: 24px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.section-four .container .gallery .item .layer .layer-child {
+    width: 100%;
+    height: 100%;
+    position:relative
+}
+.section-four .container .gallery .item .layer:hover{
+opacity: 1;
+}
+/*
+==============================================
+================ section five ================
+==============================================
+*/
+.section-five{
+    background-color: #f1f1f1;
+    /* height: 300px; */
+    margin-top: 100px;
+}
+.section-five .container .card{
+    width: 25%;
+    padding: 100px 16px;
+    text-align: center;
+    float: left;
+}
+.section-five .container .card img{
+    width: 50px;
+}
+.section-five .container .card h5{
+    padding: 8px 0;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 30px;
+    color: #333;
+}
+.section-five .container .card p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    color: #555;
+
+}
+/*
+==============================================
+================ section six ================
+==============================================
+*/
+.section-six{
+    margin: 100px 0;
+}
+.section-six .container .card{
+    width: 60%;
+    margin: 50px auto 0;
+}
+.section-six .container .card .parent{
+    background-color: #f1f1f1;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.section-six .container .card .parent .child{
+    height: 200px;
+    background-color: #ff305b;
+    transform: rotate(-45deg) translatex(-20%) translateY(-140%);
+}
+.section-six .container .card .parent .content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding:48px;
+}
+.section-six .container .card .parent .content img{
+    width: 15%;
+    border-radius: 50%;
+    margin-top: 32px;
+}
+.section-six .container .card .parent .content .text{
+    width: 85%;
+    padding-left: 32px;
+    text-align: left;
+    float: right;
+}
+.section-six .container .card .parent .content .text h3{
+    /* padding: 0 16px; */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    color: #333;
+}
+.section-six .container .card .parent .content .text p{
+    padding: 8px 0;
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+}
+.section-six .container .card .parent .content .text p img,
+.section-six .container .card .parent .content .text .rate img{
+    width: 20px;
+    margin: 0;
+}
+.section-six .container .slide{
+    text-align: center;
+    margin-top: 8px;
+}
+.section-six .container .slide button.filled{
+    width: 32px;
+    height: 12px;
+    background-color: #ff305b;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.section-six .container .slide button.circle{
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ff305b;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*
+==============================================
+================ section seven ===============
+==============================================
+*/
+.section-seven{
+    padding: 100px 0;
+    background-color: #f1f1f1;
+}
+.section-seven .container .body .card{
+    width: 30.3%;
+    padding-bottom: 16px;
+    margin: 30px 1.5%;
+    float: left;
+    background-color: #fff;
+}
+.section-seven .container .body .card img{
+    width: 100%;
+}
+.section-seven .container .body .card iframe{
+    width: 100%;
+    height: 210px;
+}
+.section-seven .container .body .card p{
+    padding: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+}
+.section-seven .container .body .card h3{
+    padding: 0 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    color: #333;
+}
+.section-seven .container .body .card a{
+    padding: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: #333;
+}
+.section-seven .container .body .card a img{
+    width: 24px;
+    vertical-align: middle;
+    margin-left: 16px;
+}
+/*
+==============================================
+================ section eight ================
+==============================================
+*/
+.section-eight{
+    padding: 100px 0;
+}
+.section-eight .form form{
+    width: 60%;
+    margin: 32px auto 64px;
+
+}
+.section-eight .form form input,
+.section-eight .form form textarea{
+    height: 40px;
+    padding: 16px;
+    margin: 25px 0;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -1px -1px #999,1px 1px #999;
+}
+.section-eight .form form input.one{
+    width: 47%;
+    float: left;
+}
+.section-eight .form form input.two{
+    width: 47%;
+    float: right;
+}
+.section-eight .form form input.three{
+    width: 100%;
+}
+.section-eight .form form textarea{
+    width: 100%;
+    height: 90px;
+}
+.section-eight .form form button{
+    padding: 12px 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff305b;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+}
+
+/*
+==============================================
+================ section nine ================
+==============================================
+*/
+.section-nine{
+    background-color: #333;
+    overflow: auto;
+}
+.section-nine .container{
+    padding: 80px 0;
+}
+.section-nine .container ul{
+     width: fit-content;
+     margin: 0 auto 16px;
+}
+.section-nine .container ul li{
+    margin: 0 16px;
+    float:left;
+}
+.section-nine .container ul li a img{
+    width: 24px;
+}
+.section-nine .container p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.section-nine .container p a{
+    color: #ff305b;
+}
+.section-nine .container p a:hover{
+    text-decoration: #ff305b underline;
+}
